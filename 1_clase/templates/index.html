@@ -2,16 +2,13 @@
 <html>
     <head>
         <title>Inicio</title>
+        <link rel="stylesheet" href="static/stylesheet.css">
     </head>
 
     <body>
-
-        <h1>Hello World</h1>
-
-        <span style="text-decoration: underline;">Texto subrayado</span>
-
-        <img src="/static/ejemplo1.png" alt="Imagen de ejemplo" height="50%"/>
-
-        <a href="{{url_for('funcion_fecha')}}">Ver fecha actual</a>
+        <div class="maincontent">
+            <h1>Demostración HTML-CSS</h1>
+            <a href="{{url_for('funcion_fecha')}}"><button>Ver fecha actual</button></a>
+        </div>
     </body>
 </html>

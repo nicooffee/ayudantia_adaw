@@ -1,0 +1,32 @@
+[
+    {
+        "id": "word01",
+        "tipo": "Noun",
+        "palabra": "Libertinaje",
+        "def_eng": "Debauchery" 
+    },
+    {
+        "id": "word02",
+        "tipo": "Verbo intransitivo",
+        "palabra": "Ser molestado",
+        "def_eng": "To be pestered" 
+    },
+    {
+        "id": "word03",
+        "tipo": "Verbo transitivo",
+        "palabra": "Arrojar",
+        "def_eng": "To toss" 
+    },
+    {
+        "id": "word04",
+        "tipo": "Adjetivo",
+        "palabra": "Repetitivo",
+        "def_eng": "Platitudinous" 
+    },
+    {
+        "id": "word05",
+        "tipo": "Verbo transitivo",
+        "palabra": "Rechazar",
+        "def_eng": "To Reject" 
+    }
+]
