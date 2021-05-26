@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+
+{%block title%} Ejemplo form {%endblock%}
+
+{%block body%}
+    <h1>Ingreso de palabras</h1>
+    <form method="POST">
+        <label for="field_id">ID</label>
+        <input type="text" id="field_id" name="id">
+        <label for="field_tipo">Tipo</label>
+        <input type="text" id="field_tipo" name="tipo">
+        <label for="field_palabra">Palabra</label>
+        <input type="text" id="field_palabra" name="palabra">
+        <label for="field_def_eng">Definición en inglés</label>
+        <input type="text" id="field_def_eng" name="def_eng">
+        <button type="submit">Enviar</button>
+        {%if post %}
+            <p>La informacion se ha enviado correctamente</p>
+            <p>Palabra agregada:</p>
+            <p>Id: {{id}}</p>
+            <p>Tipo: {{tipo}}</p>
+            <p>Palabra: {{palabra}}</p>
+            <p>Definición en inglés: {{def_eng}}</p>
+        {%endif %}
+    </form>
+{%endblock%}

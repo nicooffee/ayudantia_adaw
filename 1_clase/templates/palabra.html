@@ -1,30 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Inicio</title>
-        <link rel="stylesheet" href="static/stylesheet.css">
-    </head>
+{%extends "base.html"%}
 
-    <body>
-        <div class="maincontent">
-            <h1>Palabras</h1>
-            <h2>Cantidad de palabras: {{lista_palabra|length}}</h2>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Tipo</th>
-                    <th>Palabra</th>
-                    <th>Traducción(eng)</th>
-                </tr>
-                {% for palabra in  lista_palabra%}
-                    <tr>
-                        <td>{{palabra['id']}}</td>
-                        <td>{{palabra['tipo']}}</td>
-                        <td>{{palabra['palabra']}}</td>
-                        <td>{{palabra['def_eng']}}</td>
-                    </tr>
-                {% endfor %}
-            </table>
-        </div>
-    </body>
-</html>
+{%block title%} Palabras {%endblock%}
+
+{%block body%}
+    <h1>Palabras</h1>
+    <h2>Cantidad de palabras: {{lista_palabra|length}}</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Palabra</th>
+            <th>Traducción(eng)</th>
+        </tr>
+        {% for palabra in  lista_palabra%}
+            <tr>
+                <td>{{palabra['id']}}</td>
+                <td>{{palabra['tipo']}}</td>
+                <td>{{palabra['palabra']}}</td>
+                <td>{{palabra['def_eng']}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{%endblock%}

@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Fecha</title>
-        <link rel="stylesheet" href="static/stylesheet.css">
-    </head>
+{%extends "base.html"%}
 
-    <body>
-        <div class="maincontent">
-            <h1>Fecha Actual</h1>
-            <p> {{fecha}} </p>
-            <a href="{{url_for('funcion_fecha')}}">Actualizar</a>
-            <a href="{{url_for('funcion_inicio')}}">Volver</a>
-        </div>
-    </body>
-</html>
+{%block title%} Fecha {%endblock%}
+
+{%block body%}
+    <h1>Fecha Actual</h1>
+    <p> {{fecha}} </p>
+    <a href="{{url_for('funcion_fecha')}}">Actualizar</a>
+{%endblock%}

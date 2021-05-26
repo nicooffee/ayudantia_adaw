@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Inicio</title>
-        <link rel="stylesheet" href="static/stylesheet.css">
-    </head>
+{%extends "base.html"%}
 
-    <body>
-        <div class="maincontent">
-            <h1>Demostración HTML-CSS</h1>
-            <a href="{{url_for('funcion_fecha')}}"><button>Ver fecha actual</button></a>
-        </div>
-    </body>
-</html>
+{%block title%} Inicio {%endblock%}
+
+{%block body%}
+    <h1>Demostración HTML-CSS</h1>
+{%endblock%}
+
