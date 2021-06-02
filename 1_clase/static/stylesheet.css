@@ -1,18 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 .maincontent {
     background: #e9e9e9;
-    width: 500px;
+    width: 70vw;
     margin: auto;
+    overflow: auto;
+    height: 90vh;
 }
 
 table {
     margin: auto;
+    position: relative;
     border: 1px solid black;
     border-collapse: collapse;
+    width:80%;
 }
 
-th,td {
-    padding-left: 15px;
-    padding-right: 15px;
+th,td {font-size:200%;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width:fit-content;
 }
 
 .black {
@@ -20,5 +29,71 @@ th,td {
     color: white;
 }
 
+/*ver: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+.vertical-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
   
+h1 {
+    font-size: 3vw;
+}
+h2 {
+    font-size: 3vw;
+}
+p {
+    font-size: 1vw;
+}
+table {
+    width: 10vw;
+}
+
+.content-izq {
+    background-color:beige;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.content-centro {
+    background-color:bisque;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+.content-der {
+    background-color:beige;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.content-der, .content-centro, .content-izq {
+    height: 90vh;
+    overflow: auto;
+}
+
+@media screen and (max-width: 800px){
+    .content-der, .content-centro, .content-izq {
+        width: 100%;
+    }
+    .content-izq,.content-der {
+        height: 20vh;
+    }
+    
+    .content-centro {
+        height: fit-content
+    }
+    h1 {
+        color: brown;
+    }
+}

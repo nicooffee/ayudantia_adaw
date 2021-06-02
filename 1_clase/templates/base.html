@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="static/stylesheet.css">
     </head>
 
     <body>
         <div class="maincontent">
-            <header>
+            <div class="content-izq">
                 <nav class="black">
                     <a href="{{url_for('funcion_inicio')}}"><button>Inicio</button></a>
                     <a href="{{url_for('funcion_fecha')}}"><button>Fecha</button></a>
                     <a href="{{url_for('funcion_palabra')}}"><button>Palabras</button></a>
                     <a href="{{url_for('funcion_form')}}"><button>Ejemplo form</button></a>
                 </nav>
-            </header>
-            {%block body%}
-            {%endblock%}
+            </div>
+            <div class="content-centro">
+                {%block body%}
+                {%endblock%}
+            </div>
+            <div class="content-der">
+                <p>Contenedor derecho</p>
+            </div>
         </div
     </body>
 </html>
