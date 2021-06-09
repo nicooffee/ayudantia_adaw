@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.5vw;
+}
+body {
+    background: rgb(247, 247, 233);
 }
 
 .maincontent {
@@ -7,7 +12,8 @@
     width: 70vw;
     margin: auto;
     overflow: auto;
-    height: 90vh;
+    height: fit-content;
+    border: 1px solid black;
 }
 
 table {
@@ -15,12 +21,12 @@ table {
     position: relative;
     border: 1px solid black;
     border-collapse: collapse;
-    width:80%;
+    width:100%;
 }
 
-th,td {font-size:200%;
-    padding-left: 5px;
-    padding-right: 5px;
+th,td {font-size:100%;
+    padding-left: 10px;
+    padding-right: 10px;
     max-width:fit-content;
 }
 
@@ -37,12 +43,7 @@ th,td {font-size:200%;
     flex-direction:column;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-}
+
   
 h1 {
     font-size: 3vw;
@@ -50,50 +51,92 @@ h1 {
 h2 {
     font-size: 3vw;
 }
-p {
-    font-size: 1vw;
-}
 table {
     width: 10vw;
+}
+img {
+    width: 100%;
 }
 
 .content-izq {
     background-color:beige;
     padding: 20px;
     float: left;
-    width: 20%;
 }
 
 .content-centro {
     background-color:bisque;
     padding: 20px;
     float: left;
-    width: 60%;
 }
 .content-der {
     background-color:beige;
     padding: 20px;
     float: left;
-    width: 20%;
 }
 
 .content-der, .content-centro, .content-izq {
     height: 90vh;
     overflow: auto;
 }
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap
+}
+
+.flex-item {
+    flex: 33%;
+    object-fit: contain;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item {
+    display: flex;
+    padding: 5px;
+    height: auto;
+    max-width: 100%;
+}
 
 @media screen and (max-width: 800px){
     .content-der, .content-centro, .content-izq {
         width: 100%;
-    }
-    .content-izq,.content-der {
-        height: 20vh;
-    }
-    
-    .content-centro {
-        height: fit-content
+        height: fit-content;
     }
     h1 {
         color: brown;
     }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
+
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}

@@ -8,21 +8,21 @@
 
     <body>
         <div class="maincontent">
-            <div class="content-izq">
-                <nav class="black">
-                    <a href="{{url_for('funcion_inicio')}}"><button>Inicio</button></a>
-                    <a href="{{url_for('funcion_fecha')}}"><button>Fecha</button></a>
-                    <a href="{{url_for('funcion_palabra')}}"><button>Palabras</button></a>
-                    <a href="{{url_for('funcion_form')}}"><button>Ejemplo form</button></a>
+            <div class="content-izq col-s-2">
+                <nav class="nav-container">
+                    <a class="nav-item" href="{{url_for('funcion_inicio')}}"><button>Inicio</button></a>
+                    <a class="nav-item" href="{{url_for('funcion_fecha')}}"><button>Fecha</button></a>
+                    <a class="nav-item" href="{{url_for('funcion_palabra')}}"><button>Palabras</button></a>
+                    <a class="nav-item" href="{{url_for('funcion_form')}}"><button>Ejemplo form</button></a>
                 </nav>
             </div>
-            <div class="content-centro">
+            <div class="content-centro column col-s-8">
                 {%block body%}
                 {%endblock%}
             </div>
-            <div class="content-der">
+            <div class="content-der col-s-2">
                 <p>Contenedor derecho</p>
             </div>
-        </div
+        </div>
     </body>
 </html>
