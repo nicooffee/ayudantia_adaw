@@ -39,3 +39,10 @@ Editar la variable `path` y agregar la siguiente linea:
 - `;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\PostgreSQL\13\lib`
 
 Cambiar la ruta dependiendo de la versión y nombre las carpetas.
+
+---
+Links de utilidad: 
+- https://serverfault.com/questions/311565/stop-postgresql-from-starting-on-windows
+- https://www.postgresql.org/docs/10/app-pg-ctl.html
+- https://www.computerhope.com/issues/ch000549.htm
+- https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command
