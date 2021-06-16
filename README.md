@@ -41,6 +41,7 @@ Editar la variable `path` y agregar la siguiente linea:
 Cambiar la ruta dependiendo de la versión y nombre las carpetas.
 
 ---
+
 Links de utilidad: 
 - [Cambiar servicio postgres a manual](https://serverfault.com/questions/311565/stop-postgresql-from-starting-on-windows)
 - [Opciones del comando pg_ctl](https://www.postgresql.org/docs/10/app-pg-ctl.html)
