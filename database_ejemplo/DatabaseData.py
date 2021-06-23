@@ -1,0 +1,5 @@
+user = "postgres"
+host = "172.22.240.1"
+port = "5432"
+db_model_name = "demo"
+db_model_pswd = "1234"
